@@ -27,16 +27,16 @@ class ProfileScreen extends StatelessWidget {
               width: widgetSize.width,
               height: widgetSize.height / 2,
               child: Image.asset(
-                "assets/images/img_one.jpeg",
+                "assets/images/img_one.jpg",
                 fit: BoxFit.cover,
               ),
             ),
             ListTile(
               title: const Text(
-                "Gaurav Chaudhary",
+                "Name Label",
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
-              subtitle: locationPinText(locationText: 'Pune, Maharashtra'),
+              subtitle: locationPinText(locationText: 'Locality'),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 8),

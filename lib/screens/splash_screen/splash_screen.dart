@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void timerFunction() {
     Future.delayed(const Duration(seconds: 5), () {
-      Navigator.pushNamed(context, 'splash_screen');
+      Navigator.pushNamed(context, 'home_screen');
     });
   }
 

@@ -5,4 +5,4 @@ String imgTwo = "https://www.forbesindia.com/media/images/2023/Mar/img_205235_sh
 
 String imgThree = "https://feedspotinsta.s3.us-west-2.amazonaws.com/inms_technoruhez.jpg";
 
-String personOne = "See something techy, see something new' is Gaurav Chaudhary's motto. He has 22.1 million subscribers on YouTube. Chaudhary's promise is to make tech accessible to everyone by explaining it in Hindi. His YouTube channel went online in October 2015 and has amassed over 3 billion views so far.";
+String personOne = "Embracing the unknown with every pixel, meet Akari Suzuki, the enigmatic anime enthusiast. With a passion for unraveling the mysteries of animation, Suzuki captivates audiences with her unique perspective. From the whimsical to the profound, she guides viewers through the colorful world of anime, sharing insights and unraveling its intricacies. Join her journey as she explores the limitless realms of storytelling and imagination, one frame at a time.";
