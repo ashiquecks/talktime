@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:talktime/recourses/app_widget_style.dart';
-import 'package:talktime/widgets/rich_text_widget.dart';
+import 'package:talktime/widgets/widget_function/rich_text_widget.dart';
 
 // TEMPORARY DISABLED THIS WIDGET (14-03-2004 DESIGN CHANGED NOT USED THIS WIDGET ----REMOVABLE)
 Widget profileContentColumn({

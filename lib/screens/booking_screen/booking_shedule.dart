@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dash/flutter_dash.dart';
 import 'package:talktime/widgets/button_widgets.dart';
 import 'package:talktime/widgets/inkwell_widgets.dart';
-import 'package:talktime/widgets/rich_text_widget.dart';
+import 'package:talktime/widgets/widget_function/rich_text_widget.dart';
 
 class BookingSchedule extends StatelessWidget {
   const BookingSchedule({super.key});

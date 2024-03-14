@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gradient_borders/gradient_borders.dart';
 import 'package:talktime/recourses/app_widget_style.dart';
 
-followingListCard({
+followingAvatarCard({
   required String image,
 }) {
   return Column(
@@ -23,30 +22,11 @@ followingListCard({
           ),
         ),
       ),
-      SizedBox(
-        width: 120,
-        child: Text(
-          "Name Label",
-          style: smallBlack,
-          overflow: TextOverflow.ellipsis,
-        ),
+      Text(
+        "Name Label",
+        style: smallBlack,
+        overflow: TextOverflow.ellipsis,
       ),
     ],
   );
 }
-
-// followingListCard() {
-//   return Container(
-//     padding: const EdgeInsets.all(8),
-//     decoration: BoxDecoration(
-//       border: Border.all(
-//         color: primaryBlue,
-//       ),
-//       borderRadius: BorderRadius.circular(12),
-//     ),
-//     child: Text(
-//       "Following",
-//       style: TextStyle(color: primaryBlue, fontSize: 16),
-//     ),
-//   );
-// }

@@ -1,86 +1,65 @@
 import 'package:flutter/material.dart';
 import 'package:talktime/recourses/app_colors.dart';
-import 'package:talktime/recourses/app_widget_style.dart';
-import 'package:talktime/widgets/card_widget.dart';
-import 'package:talktime/widgets/column_widget.dart';
-import 'package:talktime/widgets/container_widget.dart';
+import 'package:talktime/widgets/costomized_class/custom_bottom_navigationbar.dart';
+import 'package:talktime/widgets/widget_class/post_wall_card/post_wall_card.dart';
+import 'package:talktime/widgets/widget_class/profile_wall_card/profile_wall_card.dart';
+import 'package:talktime/widgets/widget_function/following_avatar_card.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
   @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        leading: const SizedBox(),
-        leadingWidth: 0,
-        title: Image.asset('assets/images/logo.png', height: 140),
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            ListTile(
-              leading: Text("Following", style: mediumBlack),
-              trailing: Container(
-                padding: const EdgeInsets.all(5),
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.grey),
-                  borderRadius: BorderRadius.circular(5),
-                ),
-                child: Text("See All", style: smallBlack),
-              ),
+    Size widgetSize = MediaQuery.of(context).size;
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          const SizedBox(height: 15),
+          SizedBox(
+            height: 160,
+            child: ListView(
+              shrinkWrap: true,
+              scrollDirection: Axis.horizontal,
+              children: [
+                followingAvatarCard(image: 'assets/images/img_one.jpg'),
+                followingAvatarCard(image: 'assets/images/img_one.jpg'),
+                followingAvatarCard(image: 'assets/images/img_one.jpg'),
+                followingAvatarCard(image: 'assets/images/img_one.jpg'),
+              ],
             ),
-            SizedBox(
-              height: 160,
-              child: ListView(
-                shrinkWrap: true,
-                scrollDirection: Axis.horizontal,
-                children: [
-                  followingListCard(image: 'assets/images/img_one.jpg'),
-                  followingListCard(image: 'assets/images/img_one.jpg'),
-                  followingListCard(image: 'assets/images/img_one.jpg'),
-                  followingListCard(image: 'assets/images/img_one.jpg'),
-                ],
-              ),
-            ),
-            // ListTile(
-            //   leading: Text("Post Wall", style: mediumBlack),
-            // ),
-            InkWell(
-              onTap: () {
-                Navigator.pushNamed(context, 'profile_screen');
-              },
-              child: Row(
-                children: [
-                  profileImageCard(image: 'assets/images/img_one.jpg'),
-                  profileContentColumn(title: 'Name Label', expert: 'Category')
-                ],
-              ),
-            ),
-            InkWell(
-              onTap: () {
-                Navigator.pushNamed(context, 'profile_screen');
-              },
-              child: Row(
-                children: [
-                  profileImageCard(image: 'assets/images/img_one.jpg'),
-                  profileContentColumn(title: 'Name Label', expert: 'Category')
-                ],
-              ),
-            ),
-            InkWell(
-              onTap: () {
-                Navigator.pushNamed(context, 'profile_screen');
-              },
-              child: Row(
-                children: [
-                  profileImageCard(image: 'assets/images/img_one.jpg'),
-                  profileContentColumn(title: 'Name Label', expert: 'Category')
-                ],
-              ),
-            ),
-          ],
-        ),
+          ),
+          ListView.separated(
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            itemCount: 2,
+            itemBuilder: (context, index) {
+              return const ProfileWallCard();
+            },
+            separatorBuilder: (context, index) {
+              return const Divider();
+            },
+          ),
+          const Divider(
+            height: 5,
+            thickness: 5,
+          ),
+          ListView.separated(
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            itemCount: 2,
+            itemBuilder: (context, index) {
+              return const PostWallCard();
+            },
+            separatorBuilder: (context, index) {
+              return const Divider();
+            },
+          ),
+        ],
       ),
     );
   }

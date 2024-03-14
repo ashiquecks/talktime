@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:talktime/screens/booking_screen/booking_form.dart';
 import 'package:talktime/screens/booking_screen/booking_shedule.dart';
+import 'package:talktime/screens/home_navigation/home_navogator_screen.dart';
 import 'package:talktime/screens/home_screen/home_screen.dart';
 import 'package:talktime/screens/profile_screen/profile_screen.dart';
 import 'package:talktime/screens/splash_screen/splash_screen.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
       initialRoute: 'splash_screen',
       routes: {
         'splash_screen': (context) => const SplashScreen(),
+        'home_navigator_screen': (context) => const HomeNavigatorScreen(),
         'home_screen': (context) => const HomeScreen(),
         'profile_screen': (context) => const ProfileScreen(),
         'booking_form': (context) => const BookingForm(),

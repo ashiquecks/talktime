@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:social_media_flutter/widgets/icons.dart';
-import 'package:social_media_flutter/widgets/text.dart';
 import 'package:talktime/recourses/app_string.dart';
 import 'package:talktime/widgets/button_widgets.dart';
-import 'package:talktime/widgets/image_widgets.dart';
-import 'package:talktime/widgets/rich_text_widget.dart';
+import 'package:talktime/widgets/small_type_widget/small_type_widget.dart';
+import 'package:talktime/widgets/widget_function/rich_text_widget.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
