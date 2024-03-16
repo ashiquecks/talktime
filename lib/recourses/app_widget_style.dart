@@ -8,6 +8,8 @@ TextStyle smallWhite = const TextStyle(color: Colors.white, fontSize: 12, fontWe
 
 TextStyle smallBlack = const TextStyle(color: Colors.black, fontSize: 12, fontWeight: FontWeight.bold);
 
+TextStyle smallGrey = const TextStyle(color: Colors.grey, fontSize: 12, fontWeight: FontWeight.bold);
+
 TextStyle nanoGrey = const TextStyle(color: Colors.grey, fontSize: 10, fontWeight: FontWeight.bold);
 
 TextStyle whiteText = const TextStyle(

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:talktime/screens/category_screen/category_screen.dart';
 import 'package:talktime/screens/home_screen/home_screen.dart';
+import 'package:talktime/screens/search_screen/search_screen.dart';
 import 'package:talktime/screens/user_profile_screen/user_profile_screen.dart';
 import 'package:talktime/widgets/costomized_class/custom_bottom_navigationbar.dart';
+
 
 class HomeNavigatorScreen extends StatefulWidget {
   const HomeNavigatorScreen({super.key});
@@ -15,6 +17,7 @@ class _HomeNavigatorScreenState extends State<HomeNavigatorScreen> {
   int _selectedIndex = 0;
   static const List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
+    SearchScreen(),
     CategoryScreen(),
     UserProfileScreen(),
   ];
@@ -46,6 +49,11 @@ class _HomeNavigatorScreenState extends State<HomeNavigatorScreen> {
           CustomBottomNavigationBarItem(
             icon: const Icon(Icons.home),
             title: const Text("Home"),
+            selectedColor: Colors.grey,
+          ),
+          CustomBottomNavigationBarItem(
+            icon: const Icon(Icons.search),
+            title: const Text("Search"),
             selectedColor: Colors.grey,
           ),
           CustomBottomNavigationBarItem(
