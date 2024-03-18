@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:talktime/recourses/app_colors.dart';
 import 'package:talktime/recourses/app_string.dart';
 import 'package:talktime/recourses/app_widget_style.dart';
 import 'package:talktime/widgets/small_type_widget/small_type_widget.dart';

@@ -14,26 +14,26 @@ class BookingForm extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          primaryTextFormField(
-            hintText: "Enter Name",
-            keyboardType: TextInputType.name,
-          ),
-          primaryTextFormField(
-            hintText: "Enter Email",
-            keyboardType: TextInputType.emailAddress,
-          ),
-          primaryTextFormField(
-            hintText: "Phone Number",
-            keyboardType: TextInputType.emailAddress,
-          ),
-          primaryTextFormField(
-            hintText: "Enter City",
-            keyboardType: TextInputType.text,
-          ),
-          primaryTextFormField(
-            hintText: "Enter Pin Code",
-            keyboardType: TextInputType.number,
-          ),
+          // primaryTextFormField(
+          //   hintText: "Enter Name",
+          //   keyboardType: TextInputType.name,
+          // ),
+          // primaryTextFormField(
+          //   hintText: "Enter Email",
+          //   keyboardType: TextInputType.emailAddress,
+          // ),
+          // primaryTextFormField(
+          //   hintText: "Phone Number",
+          //   keyboardType: TextInputType.emailAddress,
+          // ),
+          // primaryTextFormField(
+          //   hintText: "Enter City",
+          //   keyboardType: TextInputType.text,
+          // ),
+          // primaryTextFormField(
+          //   hintText: "Enter Pin Code",
+          //   keyboardType: TextInputType.number,
+          // ),
         ],
       ),
       bottomNavigationBar: primaryButton(

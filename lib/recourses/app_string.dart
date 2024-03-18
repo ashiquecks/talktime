@@ -5,4 +5,9 @@ String imgTwo = "https://www.forbesindia.com/media/images/2023/Mar/img_205235_sh
 
 String imgThree = "https://feedspotinsta.s3.us-west-2.amazonaws.com/inms_technoruhez.jpg";
 
-String personOne = "Embracing the unknown with every pixel, meet Akari Suzuki, the enigmatic anime enthusiast. With a passion for unraveling the mysteries of animation, Suzuki captivates audiences with her unique perspective. From the whimsical to the profound, she guides viewers through the colorful world of anime, sharing insights and unraveling its intricacies. Join her journey as she explores the limitless realms of storytelling and imagination, one frame at a time.";
+String personOne =
+    "Embracing the unknown with every pixel, meet Akari Suzuki, the enigmatic anime enthusiast. With a passion for unraveling the mysteries of animation, Suzuki captivates audiences with her unique perspective. From the whimsical to the profound, she guides viewers through the colorful world of anime, sharing insights and unraveling its intricacies. Join her journey as she explores the limitless realms of storytelling and imagination, one frame at a time.";
+
+String smallDummyText = "is simply dummy text of the printing and typesetting industry";
+
+String mediumDummyText = "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s";

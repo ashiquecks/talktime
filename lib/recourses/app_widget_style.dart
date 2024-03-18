@@ -4,6 +4,8 @@ TextStyle mediumBlack = const TextStyle(color: Colors.black, fontSize: 18, fontW
 
 TextStyle mediumWhite = const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold);
 
+TextStyle mediumGrey = const TextStyle(color: Colors.grey, fontSize: 18, fontWeight: FontWeight.bold);
+
 TextStyle smallWhite = const TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold);
 
 TextStyle smallBlack = const TextStyle(color: Colors.black, fontSize: 12, fontWeight: FontWeight.bold);

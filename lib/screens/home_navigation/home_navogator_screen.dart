@@ -5,7 +5,6 @@ import 'package:talktime/screens/search_screen/search_screen.dart';
 import 'package:talktime/screens/user_profile_screen/user_profile_screen.dart';
 import 'package:talktime/widgets/costomized_class/custom_bottom_navigationbar.dart';
 
-
 class HomeNavigatorScreen extends StatefulWidget {
   const HomeNavigatorScreen({super.key});
 
@@ -30,43 +29,45 @@ class _HomeNavigatorScreenState extends State<HomeNavigatorScreen> {
 
   @override
   Widget build(BuildContext context) {
-    Size widgetSize = MediaQuery.of(context).size;
-    return Scaffold(
-      appBar: AppBar(
-        leading: const SizedBox(),
-        leadingWidth: 0,
-        title: Image.asset('assets/images/min-logo.png', height: 50),
-      ),
-      body: Center(
-        child: _widgetOptions.elementAt(_selectedIndex),
-      ),
-      bottomNavigationBar: CustomBottomNavigationBar(
-        currentIndex: _selectedIndex,
-        onTap: (index) {
-          _onItemTapped(index);
-        },
-        items: [
-          CustomBottomNavigationBarItem(
-            icon: const Icon(Icons.home),
-            title: const Text("Home"),
-            selectedColor: Colors.grey,
-          ),
-          CustomBottomNavigationBarItem(
-            icon: const Icon(Icons.search),
-            title: const Text("Search"),
-            selectedColor: Colors.grey,
-          ),
-          CustomBottomNavigationBarItem(
-            icon: const Icon(Icons.favorite_border),
-            title: const Text("Category"),
-            selectedColor: Colors.grey,
-          ),
-          CustomBottomNavigationBarItem(
-            icon: const Icon(Icons.person),
-            title: const Text("Profile"),
-            selectedColor: Colors.grey,
-          ),
-        ],
+    return WillPopScope(
+      onWillPop: () async => true,
+      child: Scaffold(
+        appBar: AppBar(
+          leading: const SizedBox(),
+          leadingWidth: 0,
+          title: Image.asset('assets/images/min-logo.png', height: 50),
+        ),
+        body: Center(
+          child: _widgetOptions.elementAt(_selectedIndex),
+        ),
+        bottomNavigationBar: CustomBottomNavigationBar(
+          currentIndex: _selectedIndex,
+          onTap: (index) {
+            _onItemTapped(index);
+          },
+          items: [
+            CustomBottomNavigationBarItem(
+              icon: const Icon(Icons.home),
+              title: const Text("Home"),
+              selectedColor: Colors.grey,
+            ),
+            CustomBottomNavigationBarItem(
+              icon: const Icon(Icons.search),
+              title: const Text("Search"),
+              selectedColor: Colors.grey,
+            ),
+            CustomBottomNavigationBarItem(
+              icon: const Icon(Icons.favorite_border),
+              title: const Text("Category"),
+              selectedColor: Colors.grey,
+            ),
+            CustomBottomNavigationBarItem(
+              icon: const Icon(Icons.person),
+              title: const Text("Profile"),
+              selectedColor: Colors.grey,
+            ),
+          ],
+        ),
       ),
     );
   }
